@@ -1,10 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+  import Header from "./components/Header.vue";
 </script>
 
 <template>
   <div id="app">
-    <h1>Mees van der Kevie</h1>
+
+    <h1>Hallo, ik ben Mees 👋</h1>
   </div>
 </template>
 
