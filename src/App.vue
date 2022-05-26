@@ -5,8 +5,8 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <div id="app">
-
     <h1>Hallo, ik ben Mees 👋</h1>
+    <p>Beginnende Developer</p>
   </div>
 </template>
 
