@@ -1,6 +1,13 @@
-<script setup>
+<script>
+  
   import { RouterLink, RouterView } from "vue-router";
   import Header from "./components/Header.vue";
+
+  export default {
+    components: {
+      Header
+    }
+  }
 </script>
 
 <template>
@@ -12,8 +19,10 @@
     <a href="https://github.com/meesvanderkevie"><img src="./images/github.svg" class="img-social"></a>
 
     <h2>Projecten</h2>
-
+    
     <p>Binnenkort meer...</p>
+
+    <h2>Onderzoek en Ontwerpen</h2>
   </div>
 </template>
 
@@ -47,5 +56,10 @@
     font-weight: semi-bold;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(0, 65, 149);
   }
 </style>
