@@ -13,6 +13,8 @@
 <template>
   <div id="app">
 
+    <Header/>
+
     <h1 style="margin-bottom: 1px;">Hallo, ik ben Mees 👋</h1>
     <p style="color: gray; font-weight: bold;">Beginnende Developer</p>
 
@@ -21,8 +23,6 @@
     <h2>Projecten</h2>
     
     <p>Binnenkort meer...</p>
-
-    <h2>Onderzoek en Ontwerpen</h2>
   </div>
 </template>
 
@@ -35,6 +35,12 @@
     margin-right: auto;
     width: 3em;
     height: 3em;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .img-social:hover {
+    width: 3.5em;
+    height: 3.5em;
   }
 
   h1 {
