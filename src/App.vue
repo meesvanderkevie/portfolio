@@ -8,6 +8,13 @@
       Header
     }
   }
+
+  function copyUsername () {
+    const username = "ItzJustMees#1984";
+
+    navigator.clipboard.writeText(username);
+    alert("Copied: " + username);
+  }
 </script>
 
 <template>
@@ -18,11 +25,10 @@
     <h1 style="margin-bottom: 1px;">Hallo, ik ben Mees 👋</h1>
     <p style="color: gray; font-weight: bold;">Beginnende Developer</p>
 
-    <a href="https://github.com/meesvanderkevie"><img src="./images/github.svg" class="img-social"></a>
-
-    <h2>Projecten</h2>
-    
-    <p>Binnenkort meer...</p>
+    <div class="social-bar">
+      <a href="https://github.com/meesvanderkevie"><img src="./images/github.svg" class="img-social"></a>
+      <img onclick="copyUsername()" src="./images/discord.svg" class="img-social">
+    </div>
   </div>
 </template>
 
@@ -31,16 +37,14 @@
 
   .img-social {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     transition: all 0.4s ease-in-out;
   }
 
   .img-social:hover {
-    width: 3.5em;
-    height: 3.5em;
+    width: 4.5em;
+    height: 4.5em;
   }
 
   h1 {
@@ -67,5 +71,12 @@
   a {
     text-decoration: none;
     color: rgb(0, 65, 149);
+  }
+
+  .social-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 </style>
