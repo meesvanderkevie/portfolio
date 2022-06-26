@@ -7,6 +7,14 @@
     components: {
       Header
     },
+    methods: {
+      copyUsername() {
+        const username = "ItzJustMees#1984";
+        navigator.clipboard.writeText(username);
+
+        alert("Copied: " + username);
+      }
+    }
   }
 </script>
 
@@ -20,7 +28,7 @@
 
     <div class="social-bar">
       <a href="https://github.com/meesvanderkevie"><img src="./images/github.svg" class="img-social"></a>
-      <img src="./images/discord.svg" class="img-social">
+      <img @click="copyUsername" src="./images/discord.svg" class="img-social">
       <a href="mailto:mvanderkevie30@gmail.com"><img src="./images/gmail.png" class="img-social"></a>
       <a href="https://discord.gg/gE4PvnvvZe"><img src="./images/Academia.jpg" class="img-social" style="border-radius: 7px;"></a>
     </div>
