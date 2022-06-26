@@ -6,14 +6,15 @@
   export default {
     components: {
       Header
+    },
+    methods: {
+      copyUsername() {
+        const username = "ItzJustMees#1984";
+
+        navigator.clipboard.writeText(username);
+        alert("Copied: " + username);
+      }
     }
-  }
-
-  function copyUsername () {
-    const username = "ItzJustMees#1984";
-
-    navigator.clipboard.writeText(username);
-    alert("Copied: " + username);
   }
 </script>
 
