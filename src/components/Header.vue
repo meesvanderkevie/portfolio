@@ -1,10 +1,9 @@
 <template>
 
-    <div class="nav">
-        <router-link to="/">Home</router-link>
-        <router-link to="/">O&O</router-link>
-        <router-link to="/">Contact</router-link>
-    </div>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/">O&O</RouterLink>
+    <RouterLink to="/">Projecten</RouterLink>
+    
 </template>
 
 <style>
