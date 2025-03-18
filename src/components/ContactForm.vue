@@ -3,7 +3,7 @@
         name: 'ContactForm',
         data() {
             return {
-                webhookUrl: "https://discord.com/api/webhooks/1256835244670193736/9BPh31Gxgwz4atE_jwv7oFCHqlwxCu9Tb5LIiiMDBPxRDTq-ZlhwcjlihM5m4zSudI5Z"
+                webhookUrl: "https://discord.com/api/webhooks/1351667068843458711/XiztuqnfbThQASCdjOPaCmmxM5gjFZ1RXzUaqLHvx9AuWrO_4yZmJsszB2VbvDovdcuu"
             }
         },
         methods: {
